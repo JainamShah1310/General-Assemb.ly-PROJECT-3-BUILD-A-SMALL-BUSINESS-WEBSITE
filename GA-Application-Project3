@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 20px 0 20px;
+  padding: 0 auto;
+  max-width: 600px;
+  background: rgba(192,0,39,1);
+  border: 100px solid white;
+  border-radius: 50px;
+}
+/*Was unable to figure out hwo to make the width and the styling transfer properly regardless of size of web browser*/
+ul {
+  padding: 10px;
+  background: rgba(215, 185, 49, .87);
+  text-align: center;
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40 40 40 40;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Changa One', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(254,208,54,1);
+  margin: 80px 100px 0px 30px;
+}
+h2 {
+  text-align: left;
+  color: rgba(254,208,54,1);
+  margin: 10px 0 70px 55px;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: rgba(10,37,97,1);
+  background: linear-gradient(bottom, rgba(10,37,97,1), rgba(10,37,97,.4));
+  background: -webkit-linear-gradient(bottom, rgba(10,37,97,1), rgba(10,37,97,.4));
+  background: -moz-linear-gradient(bottom, rgba(10,37,97,1), rgba(10,37,97,.4));
+  padding: 10px;
+  line-height: 23px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.logo {
+  height: 150px;
+  float: right;
+  margin: 56px 10px
+}
+small {
+  opacity: 0;
+}
+.who{
+  background-image: url("http://i.imgur.com/jiFn8do.jpg");
+  background-position: center;
+}
+.what{
+  background-image: url("http://i.imgur.com/vq9GqvC.jpg");
+  background-position: cover;
+}
+.how{
+  background-image: url("http://i.imgur.com/ay0sfMs.jpg");
+  background-position: -20% 40%;
+  background-repeat: no-repeat;
+}
+.price {
+  float: right;
+}
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+.video {
+  border-radius: 15px;
+  border: 5px solid rgba(254,205,54,1);
+  margin: 29px;
+}
+@media (max-width:500px) {
+  body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(192,0,39,1);
+  border: 25px solid white;
+  border-radius: 50px;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 50px 0 10px 6px;
+  }
+  h2 {
+    font-size: 12px;
+    margin: 10px 0 35px 19px;
+  }
+  ul {
+  padding: 10px;
+  background: rgba(215, 185, 49, .87);
+  text-align: center;
+  font-size: 13px
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  small {
+    font-size: 16px;
+  }
+  .logo {
+  height: 90px;
+  float: right;
+  margin: 24px 10px
+}
+  .video {
+  border-radius: 15px;
+  border: 5px solid rgba(254,205,54,1);
+  margin: 15;
+  max-width: 210
+}
+.who{
+  background-image: url("http://i.imgur.com/jiFn8do.jpg");
+  background-position: center;
+  /*Was unable to find a way to get a scroll bar to be implemented to counter overflow.*/
+  overflow: hidden;
+}
+.what{
+  background-image: url("http://i.imgur.com/vq9GqvC.jpg");
+  background-repeat: no-repeat;
+  background-position: -120;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.how{
+  background-image: url("http://i.imgur.com/ay0sfMs.jpg");
+  background-size: 100%;
+  background-position: -20% 40%;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+  overflow: hidden;
+}
+}
+</style>
+
+</head>
+
+<body>
+<img class="logo" src="http://srboom.com/wp-content/uploads/2012/04/active_2030_logo.png">
+<h1>Active 20-30</h1>
+<h2>San Francisco #4</h2>
+<ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Get Involved</a></li>
+      <li><a href="#">Upcoming Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+<iframe class="video" width="520" height="315" src="https://www.youtube.com/embed/0ynRKOspRB0" frameborder="0" allowfullscreen></iframe>
+<div class="who" ".show-description">
+  <p>Who we are...<br />
+  <small>The Active 20-30 Club of US & Canada provides young adults with an opportunity to forge friendships and provides leadership development opportunities while improving the quality of life of disadvantaged children in their community. The San Francisco Chapter (#4) is a group for men and women between the ages of 21 and 39 and is filled with community-minded members who are interested in philanthropy, friendship, leadership development, and fun!</small></p>
+</div>
+
+<div class="what" ".show-description">
+  <p>what we do...<br />
+  <small>We have monthly meetings and socials where we discuss upcoming events, fundraising and club growth. Additionally, we host and participate in hands-on service opportunities. We are very focused on rolling up our sleeves and serving disadvantaged youth in San Francisco. We work with a number of organizations throughout the Bay Area that serve the most vulnerable children in our community. </small></p>
+</div>
+  
+<div class="how" ".show-description">
+  <p>How we do it...<br />
+  <small>We raise money through events to give back to the community. Because we are a dues-based organization, 100% of the money we raise goes directly back to the organizations we work with and the youth we serve.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+    $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
